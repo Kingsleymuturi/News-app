@@ -1,15 +1,20 @@
 from app import create_app
-from app.models import Articles, Sources
-from waitress import serve
+from flask_script import Manager, Server
 
 app = create_app('development')
 
-@app.shell_context_processor
-def make_shell_context():
-    """Makes the shell context, allowing for specific variables, and classes
-       to be known by the interactive Python session on startup."""
-    return {'Articles': Articles, 'Sources': Sources}
+manager = Manager(app)
+manager.add_command('server',Server)
 
+@manager.command
+def test():
+    """
+    Running all the unit tests
 
-if __name__ == '__main__':
-    serve(app, host='0.0.0.0', port=800)
+    """
+    import unittest
+    tests = unittest.TestLoader().discover('tests')
+    unittest.TextTestRunner(verbosity=2).run(tests)
+
+if __name__ == "__main__":
+    manager.run()
