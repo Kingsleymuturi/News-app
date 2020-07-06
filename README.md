@@ -14,7 +14,7 @@ This app enables users to view various news sources and read articles having an 
 ## Access
 * link goes here
 * You should see something similar to the following image:
-![Password-locker python shell](Image/passapp.jpg)
+![Password-locker python shell](app/news.jpg)
 
 ## Known Bugs
 There are no known bugs yet.
@@ -32,7 +32,7 @@ To fix a bug or enhance an existing module, follow these steps:
 - Create a Pull Request 
 
 ## Technologies Used
-During the creation of this webpage I used Python only.
+During the creation of this webpage I used Python.
 ## Support and contact details
 In case of anything find me here: kingsleymuturi9@gmail.com feel free to communicate any issue with the webpage
 
