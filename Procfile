@@ -1,0 +1,1 @@
+web: waitress manage:app

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+.title{
+    font-family: 'Livvic', sans-serif;
+    color: darkcyan;
+    background-color: lightgrey;
+}
+.sourcecard{
+    background-color: rgba(248, 248, 248, 0.89);
+}
+#sourcename{
+    font-family: 'Livvic', sans-serif;
+    background-color: lightgrey;
+    font-weight: bold;
+}
+.desc{
+    font-family: 'Sriracha', cursive;
+    font-size:18px;
+}
+#visit{
+    margin-left: 10%; 
+}
+.art{
+    font-family: 'Chilanka', cursive;
+    font-weight: bold;
+    background-color: #6bc5d2;
+}
+#articles{
+    margin-top: 6%;
+}
+.info{
+    margin-bottom: 2%;
+}
+
+.overlay{
+    background-color: rgba(39, 42, 42, 0.884);
+    width: 100%;
+    padding-top: 1%
+}
+.headers{
+    margin-top:4.5%;
+    margin-bottom:16px; 
+    color: mediumturquoise;
+    font-family: 'ABeeZee', sans-serif;
+}
+.nav-link,.navbar-brand{
+    font-family: 'ABeeZee', sans-serif;
+}
+.main
+{
+    background-color: rgba(39, 42, 42, 0.884);
+}

@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% import 'news_macros.html' as macro %}
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="main">
+        <h2 class="text-center font-weight-bold headers" > Technology news </h2>
+        {{ macro.display_new_sources(technology) }}
+        <h2 class="text-center font-weight-bold headers" > Sports news </h2>
+        {{ macro.display_new_sources(sports) }}
+        <h2 class="text-center font-weight-bold headers" > Business News</h2>
+        {{ macro.display_new_sources(business) }}
+        <h2 class="text-center font-weight-bold headers" >General News</h2>
+        {{ macro.display_new_sources(general) }}
+    </div>
+
+{% endblock %}
