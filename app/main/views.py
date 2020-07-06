@@ -24,15 +24,14 @@ def sourceArticles(id):
     return render_template('sourcearticles.html', articles = all_articles, source = source)
 
 
-@main.route('/search/<keyword_name>')
-def keyword(keyword_name):
-    '''
-    View function to display the search results
-    '''
-    keyword_name_list = keyword_name.split(" ")
-    keyword_name_format = "+".join(keyword_name_list)
-    searched_keyword = get_keyword(keyword_name_format)
-    title = f'{keyword_name.title()}'
-    display_keyword = keyword_name.upper()
+@main.route('/search/<article_name>')
+def articleSearch(article_name):
+    """
+    function that returns the searched articles
 
-    return render_template('search.html', keyword = searched_keyword, title = title, display_keyword=display_keyword )
+    """
+    search_article_name = article_name.split("")
+    search_name_format = "+".join(search_article_name)
+    searched_articles = search_articles(search_name_format)
+
+    return render_template('search.html',articles = searched_articles)
