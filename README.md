@@ -12,7 +12,7 @@ This project was generated with [Python](https://github.com/python) version 3.7.
 ## Description of functionality:
 This app enables users to view various news sources and read articles having an option to be directed to the main source.
 ## Access
-* link goes here
+* Click this link to access the web app https://kingsleysnewsapp.herokuapp.com/
 * You should see something similar to the following image:
 ![Password-locker python shell](app/news.jpg)
 
