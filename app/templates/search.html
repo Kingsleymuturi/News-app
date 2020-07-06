@@ -2,24 +2,12 @@
 {% import 'news_macros.html' as macro %}
 
 {% block content %}
-<div class="row">
-    <div class="header col-md-3">
-        <a href="/">
-            <h1 class="visible">The <br>Daily <br>Telegram</h1>
-            <h1 class="not-visible">The Daily Telegram</h1>
-        </a>
-        <h5>State of the world at your hands</h5>
-        <div class="footer text-center">
-            <a href="https://newsapi.org/" target="_blank"><p>Powered by NewsAPI</p></a> 
-        </div>
+
+    <div class="container">
+
+        <h3>{{ articles | count }}</h3>
+            {{ macro.display_new_articles(articles) }}
+
     </div>
-    <div class="col-md-9">
-        <h3 class="text-center">TOP ARTICLES ABOUT {{display_keyword}}</h3>
-        <hr>
-        <br>
-        <div class="articles">
-            {{ macro.displayKeyword(keyword)}}
-        </div>
-      </div>
-</div>
+
 {% endblock %}
