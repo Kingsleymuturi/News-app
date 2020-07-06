@@ -32,7 +32,7 @@ def NewsArticles():
     """
     health_articles = get_articles('health')
     education_articles = get_articles('technology')
-    return render_template('articles.html',health=health_articles, tech =education_articles)
+    return render_template('articles.html',health=health_articles,tech=education_articles)
 
 @main.route('/search/<article_name>')
 def articleSearch(article_name):
