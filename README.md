@@ -31,9 +31,8 @@ To get the code..
 3. Exporting Configurations
   ```bash
   export API_KEY='Enter your API key here'
-  ```
-  ```bash
   (windows) set API_KEY='Enter your API key here'
+  ```
 4. Running the application
   ```bash
   python3 manage.py
