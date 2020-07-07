@@ -16,6 +16,30 @@ This app enables users to view various news sources and read articles having an 
 * You should see something similar to the following image:
 ![Password-locker python shell](app/news.jpg)
 
+## How to run the application locally
+To get the code..
+
+1. Cloning the repository:
+  ```bash
+  git clone https://github.com/Kingsleymuturi/News-app.git
+  ```
+2. Move to the folder and install requirements
+  ```bash
+  cd News_Bulletins
+  pip install -r requirements.txt
+  ```
+3. Exporting Configurations
+  ```bash
+  export API_KEY='Enter your API key here'
+  ```
+  ```bash
+  (windows) set API_KEY='Enter your API key here'
+4. Running the application
+  ```bash
+  python3 manage.py
+  ```
+Open the application on your browser `127.0.0.1:5000`.
+
 ## Known Bugs
 There are no known bugs yet.
 ### Development
