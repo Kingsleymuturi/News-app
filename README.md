@@ -35,7 +35,7 @@ To get the code..
   ```
 4. Running the application
   ```bash
-  python3 manage.py
+  python3 manage.py server
   ```
 Open the application on your browser `127.0.0.1:5000`.
 
