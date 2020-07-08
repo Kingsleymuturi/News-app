@@ -1,5 +1,6 @@
-#virtual
-#*.pyc
-#__pycache__
-#.vscode
-#instance/
+virtual
+*.pyc
+__pycache__
+.vscode
+instance/
+start.sh
